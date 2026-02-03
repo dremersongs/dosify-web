@@ -4,8 +4,8 @@
         "details": [
             {
                 "appIDs": [
-                    "RVJAZANT57.com.dosify.app",
-                    "RVJAZANT57.com.dosify.app.Clip"
+                    "RVJAZANT57.Dosify.Dosify",
+                    "RVJAZANT57.Dosify.Dosify.Clip"
                 ],
                 "components": [
                     {
@@ -18,7 +18,7 @@
     },
     "appclips": {
         "apps": [
-            "RVJAZANT57.com.dosify.app.Clip"
+            "RVJAZANT57.Dosify.Dosify.Clip"
         ]
     }
 }
