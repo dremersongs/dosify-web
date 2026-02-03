@@ -1,0 +1,4 @@
+# Jekyll configuration for GitHub Pages
+# Include the .well-known directory (required for App Clips)
+include:
+  - .well-known
