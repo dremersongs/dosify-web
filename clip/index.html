@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-itunes-app" content="app-clip-bundle-id=Dosify.Dosify.Clip">
+        <title>Dosify - Medical Profile</title>
+      <style>
+                * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                }
+
+                body {
+                              font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                              background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                              min-height: 100vh;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              padding: 20px;
+                }
+
+                .container {
+                              background: white;
+                              border-radius: 24px;
+                              padding: 48px 32px;
+                              max-width: 380px;
+                              width: 100%;
+                              text-align: center;
+                              box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                }
+
+                .icon {
+                              width: 80px;
+                              height: 80px;
+                              background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                              border-radius: 20px;
+                              margin: 0 auto 24px;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-size: 36px;
+                }
+
+                h1 {
+                              font-size: 24px;
+                              font-weight: 700;
+                              color: #1a1a2e;
+                              margin-bottom: 12px;
+                }
+
+                .description {
+                              font-size: 16px;
+                              color: #6b7280;
+                              margin-bottom: 32px;
+                              line-height: 1.5;
+                }
+
+                .loading {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              gap: 8px;
+                              color: #4facfe;
+                              font-size: 15px;
+                              margin-bottom: 24px;
+                }
+
+                .spinner {
+                              width: 20px;
+                              height: 20px;
+                              border: 2px solid #e5e7eb;
+                              border-top: 2px solid #4facfe;
+                              border-radius: 50%;
+                              animation: spin 1s linear infinite;
+                }
+
+                @keyframes spin {
+                              0% { transform: rotate(0deg); }
+                              100% { transform: rotate(360deg); }
+                }
+
+                .instructions {
+                              background: #f3f4f6;
+                              border-radius: 12px;
+                              padding: 20px;
+                              text-align: left;
+                }
+
+                .instructions h3 {
+                              font-size: 14px;
+                              color: #374151;
+                              margin-bottom: 12px;
+                }
+
+                .step {
+                              display: flex;
+                              align-items: flex-start;
+                              margin-bottom: 12px;
+                              font-size: 14px;
+                              color: #6b7280;
+                }
+
+                .step:last-child {
+                              margin-bottom: 0;
+                }
+
+                .step-number {
+                              background: #4facfe;
+                              color: white;
+                              width: 20px;
+                              height: 20px;
+                              border-radius: 50%;
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                              font-size: 11px;
+                              font-weight: 600;
+                              margin-right: 12px;
+                              flex-shrink: 0;
+                }
+
+                .footer {
+                              margin-top: 24px;
+                              color: #9ca3af;
+                              font-size: 12px;
+                }
+
+                .error {
+                              background: #fef2f2;
+                              border: 1px solid #fecaca;
+                              border-radius: 12px;
+                              padding: 16px;
+                              color: #dc2626;
+                              font-size: 14px;
+                              display: none;
+                }
+            </style>
+  </head>
+  <body>
+        <div class="container">
+                  <div class="icon">
+                                <span style="color: white;">📋</span>span>
+                  </div>div>
+
+                  <h1>Medical Profile</h1>
+                <p class="description">Opening Dosify App Clip to view the medical profile...</p>p>
+        
+                <div class="loading" id="loading">
+                            <div class="spinner"></div>div>
+                            <span>Loading App Clip...</span>
+                </div>div>
+        
+                <div class="error" id="error">
+                            <strong>Unable to open App Clip</strong><br>
+                            This link is designed for iPhone. Please scan the QR code with an iPhone camera.
+                </div>div>
+        
+                <div class="instructions" id="instructions">
+                            <h3>If the App Clip doesn't open automatically:</h3>
+                            <div class="step">
+                                            <span class="step-number">1</span>
+                                            <span>Make sure you're using an iPhone with iOS 14+</span>
+                            </div>div>
+                            <div class="step">
+                                            <span class="step-number">2</span>
+                                            <span>Scan the QR code using the Camera app</span>
+                            </div>div>
+                            <div class="step">
+                                            <span class="step-number">3</span>
+                                            <span>Tap the notification banner that appears</span>
+                            </div>div>
+                </div>div>
+        
+                <p class="footer">Powered by Dosify</p>p>
+        </div>div>
+  
+      <script>
+                const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+                if (!isIOS) {
+                              document.getElementById('loading').style.display = 'none';
+                              document.getElementById('error').style.display = 'block';
+                }
+                setTimeout(function() {
+                              document.getElementById('loading').style.display = 'none';
+                }, 3000);
+      </script>
+  </body>
+</html>html>
+      </script></strong></span></h1>
+  </body>
+      </style></title>
+  </head>
